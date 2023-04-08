@@ -1,4 +1,4 @@
-// Responsive Nav
+// Responsive Navigation panel
 $(function() {
   menu = $('nav ul');
 
@@ -9,14 +9,14 @@ $(function() {
 
   $(window).resize(function() {
     var w = $(this).width();
-    if (w > 480 && menu.is(':hidden')) {
+    if (w > 481 && menu.is(':hidden')) {
       menu.removeAttr('style');
     }
   });
 
   $('nav li').on('click', function(e) {
     var w = $(window).width();
-    if (w < 480) {
+    if (w < 481) {
       menu.slideToggle();
     }
   });
